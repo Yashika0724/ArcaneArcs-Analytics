@@ -1,5 +1,4 @@
 function createGameCard(game) {
-    console.log(game);
     const card = document.createElement("div");
     card.className = "game-card";
 

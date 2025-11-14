@@ -20,7 +20,7 @@
                     <li class="HomePage">Home</li>
                     <li class="ExplorePage">Explore</li>
                     <li class="E-Sports-Page">E-Sports</li>
-                    <li>Live Streams</li>
+                    <li class="LiveStream">Live Streams</li>
                     <li>About</li>
                 </ul>
             </div>
@@ -65,13 +65,21 @@
         </div>
         <div class="page3">
             <div class="explore-container">
-                    <h2 class="Heading">🔍 Explore Games</h2>
-                    <div class="search-bar">
-                        <input type="text" id="exploreSearchInput" placeholder="Search for a game..." />
-                        <button id="exploreSearchButton">Search</button>
-                    </div>
-                    <div id="explore-results" class="TrendingCards_container"></div>
+                <h2 class="Heading">🔍 Explore Games</h2>
+                <div class="search-bar">
+                    <input type="text" id="exploreSearchInput" placeholder="Search for a game..." />
+                    <button id="exploreSearchButton">Search</button>
                 </div>
+                <div id="explore-results" class="TrendingCards_container"></div>
+            </div>
+        </div>
+        <div class="page4">
+            <div id="live-streams">
+                <h2 class="Heading">Trending Live Gaming Streams</h2>
+                <div id="streams-container" class="streams-grid">
+                    
+                </div>
+            </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -80,6 +88,7 @@
     <script src="script.js"></script>
     <script src="trendingMonth.js"></script>
     <script src="search.js"></script>
+    <script src="live.js"></script>
 </body>
 
 </html>
