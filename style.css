@@ -30,7 +30,7 @@ body {
 }
 
 .Heading {
-    font-size: 3em;
+    font-size: 2em;
     color: white;
     margin: 20px;
     font-family: "Play", sans-serif;
@@ -133,3 +133,57 @@ body {
 .TrendingCards_container {
     -ms-overflow-style: none;
 }
+
+/* Horizontal scroll (same as trending) */
+.pop-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.pop-grid::-webkit-scrollbar { display: none; }
+.pop-grid { scrollbar-width: none; }
+
+/* Match Trending Card Theme */
+.pop-card {
+    flex: 0 0 auto;
+    width: 240px;
+    background: linear-gradient(135deg, #1e1f29, #2a2b38);
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pop-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+}
+
+.pop-img {
+    width: 100%;
+    height: 140px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.pop-title {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-family: "Play", sans-serif;
+}
+
+.pop-rating, .pop-release {
+    color: #b7b7b7;
+    font-size: 14px;
+}
+
+
+
+
